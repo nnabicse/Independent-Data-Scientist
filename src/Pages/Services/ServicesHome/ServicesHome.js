@@ -1,9 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useServices from '../../../hooks/useServices/useServices';
 import Service from '../Service/Service';
 
 
 const ServicesHome = () => {
+    const navigate = useNavigate()
+    const handleAllServicesButton = () => {
+        navigate("/services")
+    }
     const [services] = useServices();
     return (
         <div>
@@ -14,7 +19,7 @@ const ServicesHome = () => {
                     service={service}
                 ></Service>)
             }
-            <button className='btn btn-primary'>ALL SERVICES</button>
+            <button onClick={handleAllServicesButton} className='btn btn-primary'>ALL SERVICES</button>
         </div>
     );
 };

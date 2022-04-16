@@ -2,7 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
-import Experiences from './Pages/Experiences/Experiences';
+import Experiences from './Pages/Experiences/Experiences/Experiences';
+
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import Services from './Pages/Services/Services/Services';
