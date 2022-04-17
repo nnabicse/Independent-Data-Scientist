@@ -1,4 +1,16 @@
-.header-title{
+.header-title {
     background-color: tomato;
-    border-radius: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header-title-text {
+    font-weight: 800;
+    color: white;
+}
+
+.header-title-desc {
+    color: white;
 }

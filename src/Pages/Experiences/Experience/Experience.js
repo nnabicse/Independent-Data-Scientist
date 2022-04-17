@@ -4,7 +4,6 @@ import { Card } from 'react-bootstrap';
 const Experience = (props) => {
     const { img, client, project, description } = props.experience;
     return (
-        <div>
             <Card>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
@@ -15,7 +14,6 @@ const Experience = (props) => {
                     </Card.Text>
                 </Card.Body>
             </Card>
-        </div>
     );
 };
 

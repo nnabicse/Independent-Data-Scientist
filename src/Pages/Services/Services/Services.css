@@ -1,0 +1,10 @@
+.all-services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.services {
+    width: 75%;
+    margin: auto;
+}

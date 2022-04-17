@@ -6,9 +6,9 @@ import './Home.css'
 const Home = () => {
     return (
         <div className='w-75 m-auto'>
-            <div className='header-title my-3'>
-                <p>Independent Data Scientist</p>
-                <p>Artificial Intelligence and Machine Learning Expert</p>
+            <div className='header-title'>
+                <h1 className='header-title-text'>Independent Data Scientist</h1>
+                <p className='header-title-desc'>Artificial Intelligence and Machine Learning Expert</p>
             </div>
             <Banner></Banner>
             <ServicesHome></ServicesHome>

@@ -4,7 +4,6 @@ import { Card } from 'react-bootstrap';
 const Service = (props) => {
     const { img, name, price, description } = props.service;
     return (
-        <div>
             <Card>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
@@ -18,7 +17,6 @@ const Service = (props) => {
                     <button className='btn btn-primary'>BOOK SERVICE</button>
                 </Card.Footer>
             </Card>
-        </div>
     );
 };
 
