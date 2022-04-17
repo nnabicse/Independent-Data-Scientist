@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
+import Checkout from './Pages/Checkout/Checkout';
 import Experiences from './Pages/Experiences/Experiences/Experiences';
 
 import Home from './Pages/Home/Home/Home';
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/checkout/:serviceId' element={<Checkout></Checkout>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/experiences' element={<Experiences></Experiences>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
