@@ -22,7 +22,7 @@ const ServicesHome = () => {
                     ></Service>)
                 }
             </div>
-            <button onClick={handleAllServicesButton} className='btn btn-primary my-2'>ALL SERVICES</button>
+            <button onClick={handleAllServicesButton} className='btn btn-primary my-2 all-services-button'>ALL SERVICES</button>
         </div>
     );
 };

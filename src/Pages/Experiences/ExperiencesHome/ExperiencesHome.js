@@ -21,7 +21,7 @@ const ExperiencesHome = () => {
                     ></Experience>)
                 }
             </div>
-            <button onClick={handleAllExperincesButton} className='btn btn-primary my-2'>ALL Experiences</button>
+            <button onClick={handleAllExperincesButton} className='btn btn-primary my-2 all-experiences-button'>ALL Experiences</button>
         </div>
     );
 };
