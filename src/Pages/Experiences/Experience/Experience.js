@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import './Experience.css'
 
 const Experience = (props) => {
     const { img, client, project, description } = props.experience;
     return (
-            <Card>
+        <div className='experience-container'>
+            <Card className='experience-card'>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{client}</Card.Title>
@@ -14,6 +16,7 @@ const Experience = (props) => {
                     </Card.Text>
                 </Card.Body>
             </Card>
+        </div>
     );
 };
 

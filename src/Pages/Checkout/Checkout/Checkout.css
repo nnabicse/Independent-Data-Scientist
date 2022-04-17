@@ -1,0 +1,48 @@
+.checkout-container {
+    width: 75%;
+    margin: auto;
+}
+
+.card-and-form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    border: none;
+}
+
+.card-container {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.card-container-header {
+    text-align: center;
+}
+
+.billing-header-container {
+    text-align: center;
+}
+
+.checkout-header-container {
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.checkout-header {
+    padding: 5px;
+}
+
+.form-container {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+
+}
