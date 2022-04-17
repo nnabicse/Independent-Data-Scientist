@@ -6,7 +6,8 @@ import Checkout from './Pages/Checkout/Checkout/Checkout';
 import Experiences from './Pages/Experiences/Experiences/Experiences';
 
 import Home from './Pages/Home/Home/Home';
-import Login from './Pages/Login/Login';
+import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 import Services from './Pages/Services/Services/Services';
 import Header from './Pages/Shared/Header/Header';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
     </div>
   );
