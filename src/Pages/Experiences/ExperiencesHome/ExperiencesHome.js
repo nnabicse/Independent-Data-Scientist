@@ -11,17 +11,19 @@ const ExperiencesHome = () => {
     }
     const [experinces] = useExperinces();
     return (
-        <div>
+        <div className='home-experiences-all-container'>
             <h1 className='home-experience-header'>Experiences</h1>
-            <div className='home-experiences-container'>
-                {
-                    experinces.slice(0, 12).map(experience => <Experience
-                        key={experience.key}
-                        experience={experience}
-                    ></Experience>)
-                }
+            <div className='home-experiences-container-with-button'>
+                <div className='home-experiences-container'>
+                    {
+                        experinces.slice(0, 12).map(experience => <Experience
+                            key={experience.key}
+                            experience={experience}
+                        ></Experience>)
+                    }
+                </div>
+                <button onClick={handleAllExperincesButton} className='btn btn-primary my-2 all-experiences-button'>ALL Experiences</button>
             </div>
-            <button onClick={handleAllExperincesButton} className='btn btn-primary my-2 all-experiences-button'>ALL Experiences</button>
         </div>
     );
 };

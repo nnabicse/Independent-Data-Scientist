@@ -13,8 +13,8 @@ const Service = (props) => {
                         {description}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer>
-                    <button className='btn btn-primary'>BOOK SERVICE</button>
+                <Card.Footer className='text-center'>
+                    <button className='btn w-100 btn-primary'>BOOK SERVICE</button>
                 </Card.Footer>
             </Card>
     );
