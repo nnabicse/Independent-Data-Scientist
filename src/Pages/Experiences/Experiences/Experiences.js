@@ -7,7 +7,7 @@ const Experiences = () => {
     const [experiences] = useExperinces();
     return (
         <div className='experiences'>
-            <h1>Experiences Till Today: {experiences.length}</h1>
+            <h1 className='experiences-header-container'>Experiences</h1>
             <div className='all-experiences-container'>
                 {
                     experiences.map(experience => <Experience
