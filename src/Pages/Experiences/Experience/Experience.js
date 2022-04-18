@@ -9,7 +9,7 @@ const Experience = (props) => {
             <Card className='experience-card'>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
-                    <Card.Title>{client}</Card.Title>
+                    <Card.Title className='exp-title'>{client}</Card.Title>
                     <Card.Title>{project}</Card.Title>
                     <Card.Text>
                         {description}

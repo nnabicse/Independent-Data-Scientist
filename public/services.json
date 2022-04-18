@@ -3,63 +3,63 @@
         "id": 1,
         "name": "MASS SURVEY",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Mass surveys represent a large part of empirical research. They are able to anticipate social trends in a broad group and make them measurable by means of statistical methods. Also, they are able to verify or falsify hypotheses and to generalize statements.",
         "img": "https://i.ibb.co/TKrWXWm/service-9.jpg"
     },
     {
         "id": 2,
         "name": "BUSINESS PREDICTIONS",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Business forecasting refers to the tools and techniques used to predict developments in business, such as sales, expenditures, and profits. The purpose of business forecasting is to develop better strategies based on these informed predictions.",
         "img": "https://i.ibb.co/r6Z8smt/service-8.jpg"
     },
     {
         "id": 3,
-        "name": "RECOMENDSTION ENGINE",
+        "name": "RECOMENDATION ENGINE",
         "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "A recommendation engine is a type of data filtering tool using machine learning algorithms to recommend the most relevant items to a particular user or customer. It operates on the principle of finding patterns in consumer behavior data.",
         "img": "https://i.ibb.co/5kYCzXx/service-6.jpg"
     },
     {
         "id": 4,
         "name": "ML MODEL DEVELOPMENT",
         "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "The ML model development involves data acquisition from multiple trusted sources, data processing to make suitable for building the model, choose algorithm to build the model, build model, compute performance metrics and choose best performing model.",
         "img": "https://i.ibb.co/Cz5gqRL/service-5.jpg"
     },
     {
         "id": 5,
         "name": "HYPOTHESIS TESTING",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Hypothesis testing allows the researcher to determine whether the data from the sample is statistically significant. Hypothesis testing is one of the most important processes for measuring the validity and reliability of outcomes in any systematic investigation. It's tool that tests HT",
         "img": "https://i.ibb.co/5MgvYgq/service-4.jpg"
     },
     {
         "id": 6,
         "name": "AI HARDWARE INTEGRETION",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "Artificial Intelligence is more of a software computer program rather than hardware. It allows computer systems to mimic human actions through various insights and data patterns. It makes use of various technologies like Machine Learning, Deep Learning, Neural Networking, Natural Language Processing, etc.",
         "img": "https://i.ibb.co/YN86PJP/service-0.jpg"
     },
     {
         "id": 7,
         "name": "DRUG ANALYSIS",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "ML algorithms can be incorporated in all steps of the process of drug discovery. For example, ML algorithms have been used to find a new use of drugs, predict drug-protein interactions, discover drug efficacy, ensure safety biomarkers, and optimize the bioactivity of molecules.",
         "img": "https://i.ibb.co/m614j5k/service-1.jpg"
     },
     {
         "id": 8,
         "name": "FAULT DETECTION",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "Fault detection is recognizing that a problem has occurred, even if you don't yet know the root cause. Fault detection methods, such as built-in tests, typically log the time that the error occurred and either trigger alarms for manual intervention or initiate automatic recovery.",
         "img": "https://i.ibb.co/N3Yj2Bb/service-2.jpg"
     },
     {
         "id": 9,
         "name": "GENOME SEQUENCING",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "In the context of personal genomics (the study of an individual's unique human set of DNA), machine learning can be used to help find patterns in how small variations in genes and regulatory regions result in phenotypic changes (traits, wellness, and health) in a more automated fashion.",
         "img": "https://i.ibb.co/ydx7jrK/service-3.jpg"
     }
 ]
