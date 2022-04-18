@@ -13,7 +13,6 @@ const Checkout = () => {
     }, [])
     let bookedService = {};
     bookedServices.filter(booked => booked.id == serviceId).map(filterdService => bookedService = { ...filterdService })
-    console.log(bookedService);
     const { name, price, description, img } = bookedService;
 
     const handleSubnbmit = (event) => {
