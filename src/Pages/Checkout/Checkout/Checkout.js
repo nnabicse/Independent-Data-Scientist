@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 import './Checkout.css'
 const Checkout = () => {
     const { serviceId } = useParams()
@@ -14,10 +15,16 @@ const Checkout = () => {
     bookedServices.filter(booked => booked.id == serviceId).map(filterdService => bookedService = { ...filterdService })
     console.log(bookedService);
     const { name, price, description, img } = bookedService;
+
+    const handleSubnbmit = (event) => {
+        event.preventDefault();
+        toast("Thanks for Booking")
+
+    }
     return (
         <div className='checkout-container'>
             <div className='checkout-header-container'>
-                <h1 className='checkout-header'>Thanks for Booking {name} Service</h1>
+                <h1 className='checkout-header'>Checkout Here</h1>
             </div>
             <div className='card-and-form-container'>
                 <div className='card-container'>
@@ -47,7 +54,7 @@ const Checkout = () => {
                     <div className='billing-header-container'>
                         <h1 className='billing-header'>Billing Informations</h1>
                     </div>
-                    <Form className='form'>
+                    <Form onSubmit={handleSubnbmit} className='form'>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
@@ -64,10 +71,13 @@ const Checkout = () => {
                             <Form.Label>Adress</Form.Label>
                             <Form.Control placeholder='Billing Adress' as="textarea" rows={3} />
                         </Form.Group>
-                        <button className='btn btn-primary' type='submit'>Proceed Checkout</button>
+                        <div className='text-center'>
+                            <button className='btn btn-primary text-center' type='submit'>Proceed Checkout</button>
+                        </div>
                     </Form>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

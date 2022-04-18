@@ -1,8 +1,7 @@
-.logo {
-    width: 100px;
-
+.navbar-item {
+    color: white;
+    font-weight: 500;
 }
-
 
 .data-scientist {
     line-height: 1.5;
@@ -15,4 +14,25 @@
     line-height: 0;
     font-weight: 800;
     color: pink;
+}
+
+@media only screen and (max-width: 600px) {
+    .toggler {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .toggler {
+        width: 25%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .toggler {
+        width: 25%;
+        margin: auto;
+    }
 }

@@ -21,21 +21,25 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto text-center">
-                            <Nav.Link as={Link} to="/home">HOME</Nav.Link>
-                            <Nav.Link as={Link} to="/services">SERVICES</Nav.Link>
-                            <Nav.Link as={Link} to="/blogs">BLOGS</Nav.Link>
-                            <Nav.Link as={Link} to="/experiences">EXPERIENCES</Nav.Link>
-                            <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+                            <Nav.Link as={Link} to="/home"><span className='navbar-item'>HOME</span></Nav.Link>
+                            <Nav.Link as={Link} to="/services"><span className='navbar-item'>SERVICES</span></Nav.Link>
+                            <Nav.Link as={Link} to="/blogs"><span className='navbar-item'>BLOGS</span></Nav.Link>
+                            <Nav.Link className='navbar-item' as={Link} to="/experiences"><span className='navbar-item'>EXPERIENCES</span></Nav.Link>
+                            <Nav.Link className='navbar-item' as={Link} to="/about"><span className='navbar-item'>ABOUT</span></Nav.Link>
                         </Nav>
-                        <Nav>
+                        <Nav className='toggler'>
                             {
                                 user ?
                                     <button className='btn btn-primary border-0' onClick={handleSignOut}><Nav.Link as={Link} to="">
-                                        SIGN OUT
+                                        <span className='navbar-item'>
+                                            SIGN OUT
+                                        </span>
                                     </Nav.Link></button>
                                     :
                                     <button className='btn btn-primary border-0'><Nav.Link as={Link} to="/login">
-                                        LOGIN
+                                        <span className='navbar-item'>
+                                            LOGIN
+                                        </span>
                                     </Nav.Link></button>
                             }
                         </Nav>
