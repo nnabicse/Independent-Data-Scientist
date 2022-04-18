@@ -17,7 +17,7 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home"><img className='logo' src={logo} alt="" /></Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/home"><h2 className='independent'>INDEPENDENT</h2><p className='data-scientist'>DATA SCIENTIST</p></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto text-center">
@@ -30,7 +30,9 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                    <button className='btn btn-primary border-0' onClick={handleSignOut}>SIGN OUT</button>
+                                    <button className='btn btn-primary border-0' onClick={handleSignOut}><Nav.Link as={Link} to="">
+                                        SIGN OUT
+                                    </Nav.Link></button>
                                     :
                                     <button className='btn btn-primary border-0'><Nav.Link as={Link} to="/login">
                                         LOGIN

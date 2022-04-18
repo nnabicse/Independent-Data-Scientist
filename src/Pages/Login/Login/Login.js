@@ -12,6 +12,7 @@ const Login = () => {
     const emailRef = useRef("");
     const passwordRef = useRef("");
     const navigate = useNavigate();
+
     const location = useLocation()
     const from = location.state?.from?.pathname || "/";
     const [sendPasswordResetEmail, sending, errorReset] = useSendPasswordResetEmail(
@@ -23,18 +24,17 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
+    let errorElement;
+    if (error || errorReset) {
+        errorElement = <div>
+            <p className='text-danger'>Error: {error?.message}{errorReset?.message}</p>
+        </div>
+    }
     const handleSubmit = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password);
-    }
-    let errorElement;
-    if (error || errorReset) {
-        errorElement = <div>
-            <p className='text-danger'>Error: {error?.message} {errorReset.message}</p>
-        </div>
     }
 
     const navigateRegister = event => {
@@ -58,18 +58,20 @@ const Login = () => {
     return (
         <div className='login-container'>
             <h2 className='login-header'>Please Login</h2>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control required ref={emailRef} type="email" placeholder="Enter email" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control required ref={passwordRef} type="password" placeholder="Password" />
-                </Form.Group>
-                {errorElement}
-                <button className='btn btn-primary' type='submit'>Submit</button>
-            </Form>
-            <p>New Here? <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forgot Password? <Link onClick={resetPassword} to='' className='text-danger pe-auto text-decoration-none'>Reset Password</Link></p>
+            <div className='form-and-text-container'>
+                <Form className='form' onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control required ref={emailRef} type="email" placeholder="Enter email" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control required ref={passwordRef} type="password" placeholder="Password" />
+                    </Form.Group>
+                    {errorElement}
+                    <button className='btn btn-primary' type='submit'>Submit</button>
+                </Form>
+                <p>New Here? <Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+                <p>Forgot Password? <Link onClick={resetPassword} to='' className='text-danger pe-auto text-decoration-none'>Reset Password</Link></p>
+            </div>
             <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
         </div>

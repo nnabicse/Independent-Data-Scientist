@@ -1,3 +1,57 @@
-.banner-container{
+.banner-container {
     margin-bottom: 10px;
+}
+
+.caption {
+    background-color: rgba(128, 128, 128, 0.411);
+    font-weight: 700;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.banner-image {
+    width: 75%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .caption {
+        width: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .caption {
+        width: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .caption {
+        width: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .caption {
+        width: 50%;
+    }
+
+    .banner-image {
+        width: 75%;
+    }
 }

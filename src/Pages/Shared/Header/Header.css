@@ -3,6 +3,16 @@
 
 }
 
-/* .header-title{
-    background-color:;
-} */
+
+.data-scientist {
+    line-height: 1.5;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.independent {
+    margin-top: 20px;
+    line-height: 0;
+    font-weight: 800;
+    color: pink;
+}
