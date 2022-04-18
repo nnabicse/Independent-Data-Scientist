@@ -7,6 +7,7 @@
 .experiences {
     width: 75%;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .experiences-header-container {
@@ -17,6 +18,7 @@
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -30,6 +32,7 @@
         width: 100%;
         padding: 10px;
         margin: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -44,6 +47,7 @@
         width: 100%;
         padding: 10px;
         margin: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -57,6 +61,7 @@
     .experiences {
         width: 75%;
         margin: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -70,5 +75,6 @@
     .experiences {
         width: 75%;
         margin: auto;
+        margin-bottom: 30px;
     }
 }

@@ -1,6 +1,7 @@
 .blogs-container {
     width: 75%;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .blog {

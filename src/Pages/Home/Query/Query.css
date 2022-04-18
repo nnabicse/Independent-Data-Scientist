@@ -7,8 +7,20 @@
     margin: auto;
 }
 
+.form-label{
+    font-weight: 500;
+}
+
+.query-container {
+    margin-bottom: 40px;
+}
+
 .query-header-container {
     margin-bottom: 20px;
+}
+
+.query-header {
+    padding: 10px;
 }
 
 .query-form-container {
